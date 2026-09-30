@@ -1,0 +1,44 @@
+Building for debugging...
+[Planning deferred tasks]
+[2 / 23]
+[3 / 24] ConsulCore
+[11 / 32] ConsulCore
+[16 / 26] ConsulCore
+[16 / 26] ConsulRecoveryProbe-product
+[22 / 31] ConsulMAC-product
+[24 / 32] ConsulWorker-product
+[29 / 33] ConsulWorker-product
+[29 / 33] ConsulMAC-product
+<workspace>/Package.swift: ConsulRecoveryProbe-product: ld: warning: search path '/Library/Developer/CommandLineTools/Developer/usr/lib' not found
+<workspace>/Package.swift: ConsulRecoveryProbe-product: ld: warning: search path '/Library/Developer/CommandLineTools/Developer/Library/Frameworks' not found
+<workspace>/Package.swift: ConsulWorker-product: ld: warning: search path '/Library/Developer/CommandLineTools/Developer/usr/lib' not found
+<workspace>/Package.swift: ConsulWorker-product: ld: warning: search path '/Library/Developer/CommandLineTools/Developer/Library/Frameworks' not found
+[34 / 36] ConsulWorker-product
+<workspace>/Package.swift: ConsulMAC-product: ld: warning: search path '/Library/Developer/CommandLineTools/Developer/usr/lib' not found
+<workspace>/Package.swift: ConsulMAC-product: ld: warning: search path '/Library/Developer/CommandLineTools/Developer/Library/Frameworks' not found
+Build complete! (1.74 sec)
+Building for debugging...
+[1 / 15]
+[2 / 16] ConsulCore
+[10 / 24] ConsulCore
+[15 / 28] ConsulCore
+[17 / 29] ConsulWorker-product
+[23 / 34] ConsulCore
+[28 / 32] ConsulWorker-product
+<workspace>/Package.swift: ConsulRecoveryProbe-product: ld: warning: search path '/Library/Developer/CommandLineTools/Developer/usr/lib' not found
+<workspace>/Package.swift: ConsulRecoveryProbe-product: ld: warning: search path '/Library/Developer/CommandLineTools/Developer/Library/Frameworks' not found
+[29 / 32] ConsulRecoveryProbe-product
+<workspace>/Package.swift: ConsulMAC-product: ld: warning: search path '/Library/Developer/CommandLineTools/Developer/usr/lib' not found
+<workspace>/Package.swift: ConsulMAC-product: ld: warning: search path '/Library/Developer/CommandLineTools/Developer/Library/Frameworks' not found
+[33 / 35] ConsulMAC-product
+<workspace>/Package.swift: ConsulWorker-product: ld: warning: search path '/Library/Developer/CommandLineTools/Developer/usr/lib' not found
+<workspace>/Package.swift: ConsulWorker-product: ld: warning: search path '/Library/Developer/CommandLineTools/Developer/Library/Frameworks' not found
+Build complete! (1.51 sec)
+◇ Test run started.
+↳ Testing Library Version: 2084
+↳ Target Platform: arm64e-apple-macos14.0
+◇ Suite CoreTests started.
+◇ Test testMediaOutputLimitAndCancellationPreserveInput() started.
+✔ Test testMediaOutputLimitAndCancellationPreserveInput() passed after 3.883 seconds.
+✔ Suite CoreTests passed after 3.883 seconds.
+✔ Test run with 1 test in 1 suite passed after 3.883 seconds.

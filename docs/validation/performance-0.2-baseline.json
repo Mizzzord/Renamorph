@@ -1,0 +1,53 @@
+{
+  "app": "baseline/ConsulMAC.app",
+  "os": "27.0",
+  "architecture": "arm64",
+  "engine": "ffmpeg version 9.0.1 Copyright (c) 2000-2026 the FFmpeg developers",
+  "fixture": {
+    "audio": "30s 48kHz stereo PCM24",
+    "video": "10s 1280x720 25fps H264 CRF23 + AAC"
+  },
+  "runs": 3,
+  "scenarios": {
+    "inspect_audio": {
+      "seconds": [
+        0.23952729196753353,
+        0.22902779199648649,
+        0.2326039579929784
+      ],
+      "median": 0.2326039579929784
+    },
+    "inspect_video": {
+      "seconds": [
+        0.9027199170086533,
+        0.9015524999704212,
+        0.901958292000927
+      ],
+      "median": 0.901958292000927
+    },
+    "wav_to_mp3": {
+      "seconds": [
+        0.6626874580979347,
+        0.6530804169597104,
+        0.657604334061034
+      ],
+      "median": 0.657604334061034
+    },
+    "mov_to_mkv_remux": {
+      "seconds": [
+        1.8703227919759229,
+        1.8679823749698699,
+        1.8770537090022117
+      ],
+      "median": 1.8703227919759229
+    },
+    "mov_to_mp4_transcode": {
+      "seconds": [
+        4.64759562490508,
+        4.618161999969743,
+        4.649592667003162
+      ],
+      "median": 4.64759562490508
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "baselineBytes": 97243533,
+  "releaseBytes": 32752115,
+  "baselineAllocatedKiB": 95804,
+  "releaseAllocatedKiB": 32144,
+  "baselineMediaMachO": 102,
+  "releaseMediaMachO": 21,
+  "reductionPercent": 66.3194929373864
+}

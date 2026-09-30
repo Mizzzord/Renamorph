@@ -1,0 +1,111 @@
+Building for debugging...
+[3 / 24] ConsulCore
+[10 / 31] ConsulCore
+[17 / 27] ConsulCore
+[21 / 31] ConsulRecoveryProbe-product
+[27 / 36] ConsulCore
+<workspace>/Package.swift: ConsulCore: ld: warning: search path '/Library/Developer/CommandLineTools/Developer/Library/Frameworks' not found
+[34 / 37] ConsulRecoveryProbe-product
+<workspace>/Package.swift: ConsulRecoveryProbe-product: ld: warning: search path '/Library/Developer/CommandLineTools/Developer/usr/lib' not found
+<workspace>/Package.swift: ConsulRecoveryProbe-product: ld: warning: search path '/Library/Developer/CommandLineTools/Developer/Library/Frameworks' not found
+<workspace>/Package.swift: ConsulWorker-product: ld: warning: search path '/Library/Developer/CommandLineTools/Developer/usr/lib' not found
+<workspace>/Package.swift: ConsulWorker-product: ld: warning: search path '/Library/Developer/CommandLineTools/Developer/Library/Frameworks' not found
+[38 / 41] ConsulMAC-product
+<workspace>/Package.swift: ConsulMAC-product: ld: warning: search path '/Library/Developer/CommandLineTools/Developer/usr/lib' not found
+<workspace>/Package.swift: ConsulMAC-product: ld: warning: search path '/Library/Developer/CommandLineTools/Developer/Library/Frameworks' not found
+[40 / 41] ConsulMAC-product
+Build complete! (2.55 sec)
+Building for debugging...
+[Planning deferred tasks]
+[2 / 17] ConsulCore
+[4 / 19] ConsulCore
+[10 / 21] ConsulRecoveryProbe-product
+[21 / 30] ConsulRecoveryProbe-product
+[25 / 32] ConsulCoreTests-product
+<workspace>/Package.swift: ConsulWorker-product: ld: warning: search path '/Library/Developer/CommandLineTools/Developer/usr/lib' not found
+<workspace>/Package.swift: ConsulWorker-product: ld: warning: search path '/Library/Developer/CommandLineTools/Developer/Library/Frameworks' not found
+[27 / 35] ConsulCoreTests-product
+<workspace>/Package.swift: ConsulRecoveryProbe-product: ld: warning: search path '/Library/Developer/CommandLineTools/Developer/usr/lib' not found
+<workspace>/Package.swift: ConsulRecoveryProbe-product: ld: warning: search path '/Library/Developer/CommandLineTools/Developer/Library/Frameworks' not found
+[35 / 40] ConsulCoreTests-product
+[39 / 40] ConsulCoreTests-product<workspace>/Package.swift: ConsulCoreTests-product: ld: warning: search path '/Library/Developer/CommandLineTools/Developer/usr/lib' not found
+<workspace>/Package.swift: ConsulCoreTests-product: ld: warning: search path '/Library/Developer/CommandLineTools/Developer/Library/Frameworks' not found
+
+<workspace>/Package.swift: ConsulMAC-product: ld: warning: search path '/Library/Developer/CommandLineTools/Developer/usr/lib' not found
+<workspace>/Package.swift: ConsulMAC-product: ld: warning: search path '/Library/Developer/CommandLineTools/Developer/Library/Frameworks' not found
+[42 / 43] ConsulMAC-product
+Build complete! (2.18 sec)
+◇ Test run started.
+↳ Testing Library Version: 2084
+↳ Target Platform: arm64e-apple-macos14.0
+◇ Suite CoreTests started.
+◇ Test testEveryDeclaredRouteThroughRealWorker() started.
+✔ Test testEveryDeclaredRouteThroughRealWorker() passed after 1.869 seconds.
+◇ Test testRenameHEICToJPEGAndExactUndo() started.
+✔ Test testRenameHEICToJPEGAndExactUndo() passed after 0.230 seconds.
+◇ Test testUnknownAndRepeatedGroupExtensions() started.
+✔ Test testUnknownAndRepeatedGroupExtensions() passed after 0.001 seconds.
+◇ Test testAliasesAndBasenameDoNotBecomeCandidates() started.
+✔ Test testAliasesAndBasenameDoNotBecomeCandidates() passed after 0.001 seconds.
+◇ Test testRulesResolvePriorityAndRejectConflict() started.
+✔ Test testRulesResolvePriorityAndRejectConflict() passed after 0.001 seconds.
+◇ Test testVersionChangeBeforePreparationPreservesNewBytes() started.
+✔ Test testVersionChangeBeforePreparationPreservesNewBytes() passed after 0.018 seconds.
+◇ Test testVersionChangeAfterPreparationBlocksPublication() started.
+✔ Test testVersionChangeAfterPreparationBlocksPublication() passed after 0.091 seconds.
+◇ Test testReplacedSourceSameBytesStillRejected() started.
+✔ Test testReplacedSourceSameBytesStillRejected() passed after 0.020 seconds.
+◇ Test testMultiOutputUsesOriginalForEveryBranch() started.
+✔ Test testMultiOutputUsesOriginalForEveryBranch() passed after 0.297 seconds.
+◇ Test testUnagreedGroupStopsBeforePublishing() started.
+✔ Test testUnagreedGroupStopsBeforePublishing() passed after 0.150 seconds.
+◇ Test testCancelledBranchIsNeverPublished() started.
+✔ Test testCancelledBranchIsNeverPublished() passed after 0.124 seconds.
+◇ Test testConflictPreservesForeignFileAndSource() started.
+✔ Test testConflictPreservesForeignFileAndSource() passed after 0.155 seconds.
+◇ Test testBackupQuotaStopsBeforeSourceMutation() started.
+✔ Test testBackupQuotaStopsBeforeSourceMutation() passed after 0.026 seconds.
+◇ Test testCancelledPreparationPreservesSource() started.
+✔ Test testCancelledPreparationPreservesSource() passed after 0.019 seconds.
+◇ Test testUndoConflictPreservesManualEdit() started.
+✔ Test testUndoConflictPreservesManualEdit() passed after 0.123 seconds.
+◇ Test testUndoNameConflictAndMissingBackup() started.
+✔ Test testUndoNameConflictAndMissingBackup() passed after 0.122 seconds.
+◇ Test testInterruptedPublicationLeavesDurableRecoveryEvidence() started.
+✔ Test testInterruptedPublicationLeavesDurableRecoveryEvidence() passed after 0.153 seconds.
+◇ Test testGroupInterruptionKeepsSourceAndPartialResult() started.
+✔ Test testGroupInterruptionKeepsSourceAndPartialResult() passed after 0.163 seconds.
+◇ Test testSymlinkAndHardLinkRejected() started.
+✔ Test testSymlinkAndHardLinkRejected() passed after 0.001 seconds.
+◇ Test testCorruptAndMultiFrameInputRejected() started.
+✔ Test testCorruptAndMultiFrameInputRejected() passed after 0.022 seconds.
+◇ Test testAlphaNeedsExplicitPolicyAndPixelsAreLimited() started.
+✔ Test testAlphaNeedsExplicitPolicyAndPixelsAreLimited() passed after 0.019 seconds.
+◇ Test testOrientationIsAppliedAndMetadataRemoved() started.
+✔ Test testOrientationIsAppliedAndMetadataRemoved() passed after 0.023 seconds.
+◇ Test testJournalRoundTripAndSecondInstanceLock() started.
+✔ Test testJournalRoundTripAndSecondInstanceLock() passed after 0.016 seconds.
+◇ Test testWorkerMissingAndCrashesReturnErrors() started.
+✔ Test testWorkerMissingAndCrashesReturnErrors() passed after 0.002 seconds.
+◇ Test testLiveWatcherDetectsRenameAndExcludesFolder() started.
+✔ Test testLiveWatcherDetectsRenameAndExcludesFolder() passed after 1.516 seconds.
+◇ Test testSIGKILLDuringPublicationBecomesRecoveryOnRestart() started.
+✔ Test testSIGKILLDuringPublicationBecomesRecoveryOnRestart() passed after 0.579 seconds.
+◇ Test testWorkerCancellationKillsProcessGroup() started.
+✔ Test testWorkerCancellationKillsProcessGroup() passed after 0.058 seconds.
+◇ Test testWorkerTimeoutStopsHungEngine() started.
+✔ Test testWorkerTimeoutStopsHungEngine() passed after 0.212 seconds.
+◇ Test testWritePermissionFailurePreservesSource() started.
+✔ Test testWritePermissionFailurePreservesSource() passed after 0.041 seconds.
+◇ Test testWatcherRapidRenameAndRescanDoNotMultiplyRequests() started.
+✔ Test testWatcherRapidRenameAndRescanDoNotMultiplyRequests() passed after 2.530 seconds.
+◇ Test testCoordinatorAutomaticRuleCompletesRealRename() started.
+✔ Test testCoordinatorAutomaticRuleCompletesRealRename() passed after 1.813 seconds.
+◇ Test testCancellationReleasesOnlyUnpublishedWorkingResults() started.
+✔ Test testCancellationReleasesOnlyUnpublishedWorkingResults() passed after 0.143 seconds.
+◇ Test testOriginalCanBeExportedAfterItsFolderMoved() started.
+✔ Test testOriginalCanBeExportedAfterItsFolderMoved() passed after 0.149 seconds.
+◇ Test testUntrustedWorkerDimensionsAreRejectedBeforeArithmetic() started.
+✔ Test testUntrustedWorkerDimensionsAreRejectedBeforeArithmetic() passed after 0.007 seconds.
+✔ Suite CoreTests passed after 10.710 seconds.
+✔ Test run with 34 tests in 1 suite passed after 10.710 seconds.

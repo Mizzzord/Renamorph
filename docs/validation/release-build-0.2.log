@@ -1,0 +1,56 @@
+Building for production...
+[Planning deferred tasks]
+[2 / 10]
+[3 / 11] ConsulCore
+[13 / 69]
+[15 / 69]
+[20 / 69]
+[25 / 69]
+[29 / 69]
+[32 / 69]
+[38 / 69]
+[39 / 69]
+[40 / 69]
+[41 / 69]
+[42 / 69]
+[48 / 69]
+[49 / 69]
+[54 / 69]
+[55 / 69]
+[57 / 69]
+[59 / 69]
+[61 / 69]
+[62 / 69] ConsulCore
+<workspace>/Package.swift: ConsulCore: ld: warning: search path '/Library/Developer/CommandLineTools/Developer/Library/Frameworks' not found
+[70 / 76] ConsulRecoveryProbe-product
+[83 / 133]
+[91 / 133]
+[99 / 133]
+[107 / 133]
+[109 / 133]
+<workspace>/Package.swift: ConsulRecoveryProbe-product: ld: warning: search path '/Library/Developer/CommandLineTools/Developer/usr/lib' not found
+<workspace>/Package.swift: ConsulRecoveryProbe-product: ld: warning: search path '/Library/Developer/CommandLineTools/Developer/Library/Frameworks' not found
+[111 / 133]
+[115 / 133]
+[117 / 133]
+[120 / 133]
+[123 / 133]
+[125 / 133]
+[126 / 133] ConsulWorker-product
+<workspace>/Package.swift: ConsulWorker-product: ld: warning: search path '/Library/Developer/CommandLineTools/Developer/usr/lib' not found
+<workspace>/Package.swift: ConsulWorker-product: ld: warning: search path '/Library/Developer/CommandLineTools/Developer/Library/Frameworks' not found
+[128 / 134] ConsulWorker-product
+[128 / 134]
+[129 / 134]
+[130 / 134]
+[131 / 134] ConsulMAC-product
+[133 / 134] ConsulMAC-product
+<workspace>/Package.swift: ConsulMAC-product: ld: warning: search path '/Library/Developer/CommandLineTools/Developer/usr/lib' not found
+<workspace>/Package.swift: ConsulMAC-product: ld: warning: search path '/Library/Developer/CommandLineTools/Developer/Library/Frameworks' not found
+[134 / 136] ConsulMAC-product
+[140 / 140] ConsulRecoveryProbe-product
+Build complete! (28.93 sec)
+Bundled 102 Mach-O files; macOS 27.0+; ffmpeg version 9.0.1 Copyright (c) 2000-2026 the FFmpeg developers
+<workspace>/dist/.consul-build.RDvDF1/ConsulMAC.app/Contents/Helpers/ConsulWorker: replacing existing signature
+<workspace>/dist/.consul-build.RDvDF1/ConsulMAC.app: replacing existing signature
+Готово: <workspace>/dist/ConsulMAC.app

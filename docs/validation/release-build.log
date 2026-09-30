@@ -1,0 +1,18 @@
+Building for production...
+[3 / 11] ConsulCore
+[5 / 12] ConsulCore
+<workspace>/Package.swift: ConsulCore: ld: warning: search path '/Library/Developer/CommandLineTools/Developer/Library/Frameworks' not found
+[12 / 15] ConsulRecoveryProbe-product
+<workspace>/Package.swift: ConsulWorker-product: ld: warning: search path '/Library/Developer/CommandLineTools/Developer/usr/lib' not found
+<workspace>/Package.swift: ConsulWorker-product: ld: warning: search path '/Library/Developer/CommandLineTools/Developer/Library/Frameworks' not found
+<workspace>/Package.swift: ConsulMAC-product: ld: warning: search path '/Library/Developer/CommandLineTools/Developer/usr/lib' not found
+<workspace>/Package.swift: ConsulMAC-product: ld: warning: search path '/Library/Developer/CommandLineTools/Developer/Library/Frameworks' not found
+[13 / 16] ConsulMAC-product
+[16 / 16] ConsulMAC-product
+<workspace>/Package.swift: ConsulRecoveryProbe-product: ld: warning: search path '/Library/Developer/CommandLineTools/Developer/usr/lib' not found
+<workspace>/Package.swift: ConsulRecoveryProbe-product: ld: warning: search path '/Library/Developer/CommandLineTools/Developer/Library/Frameworks' not found
+[20 / 20] ConsulRecoveryProbe-product
+Build complete! (3.18 sec)
+<workspace>/dist/.consul-build.Tdt9sx/ConsulMAC.app/Contents/Helpers/ConsulWorker: replacing existing signature
+<workspace>/dist/.consul-build.Tdt9sx/ConsulMAC.app: replacing existing signature
+Готово: <workspace>/dist/ConsulMAC.app

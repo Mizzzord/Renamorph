@@ -1,0 +1,8 @@
+.build/
+dist/
+test-artifacts/
+.DS_Store
+__pycache__/
+*.pyc
+# Reference supplied for requirements; not part of the product source.
+docs/Consul_technical_architecture_RU.md

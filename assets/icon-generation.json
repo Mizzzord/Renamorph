@@ -1,0 +1,7 @@
+{
+  "tool": "builtin image_gen",
+  "source": "AppIcon.png",
+  "output": "AppIcon.icns",
+  "transparent": true,
+  "prompt": "Use case: logo-brand. Asset type: production macOS app icon for ConsulMAC, a privacy-first local file converter with backup and undo. Create one polished square icon image suitable for scaling down to 16px and up to 1024px. Subject: a bold, simple white document sheet with a small folded corner, enclosed by two broad interlocking teal conversion arrows; a subtle protective shield silhouette suggested by the arrow contour. Composition: centered, straight-on, no perspective; a rich deep teal to turquoise rounded-square tile with understated dimensional shading and crisp clean edges; generous transparent margin outside the tile, about 9% per side. The glyph is large, readable, and geometrically balanced. Style: refined native macOS utility icon, restrained soft lighting, no glass clutter, no photographic texture. Outside the rounded-square tile must be genuinely transparent alpha. No text, letters, wordmarks, checkerboard pattern, border, watermark, extra objects, or promotional mockup. Deliver a single icon, not an icon sheet."
+}

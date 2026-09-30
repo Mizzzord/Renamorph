@@ -1,0 +1,15 @@
+Renamorph
+Copyright (C) 2026 Mizzzord
+
+The original Renamorph source code and artwork in this repository are licensed
+under the GNU General Public License, version 2 or (at your option) any later
+version. See LICENSE. Renamorph is provided without warranty.
+
+Bundled third-party components retain their own copyrights and licenses.
+The FFmpeg build enables GPL components including x264 and is GPL-2.0-or-later.
+Third-party notices and build recipes are included in the application under
+Contents/Resources/ThirdParty. The matching third-party source archive is
+published alongside each binary release. See docs/THIRD_PARTY.md.
+
+The app icon was generated with OpenAI image generation and packaged using
+Apple sips/iconutil. Its provenance is recorded in assets/icon-generation.json.
