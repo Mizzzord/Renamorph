@@ -59,7 +59,7 @@ clip.mov   → clip.mp4      перепаковка или перекодиро�
 
 **Текущий бинарный выпуск: macOS 27.0+, Apple Silicon, локальный APFS.** На этой конфигурации выполнены проверки. Intel и более ранние macOS не заявлены.
 
-1. В [Releases](https://github.com/Mizzzord/Renamorph/releases) скачайте `Renamorph-0.4.0-macOS-arm64.zip` и при желании проверьте его SHA-256 по `SHA256SUMS`.
+1. В [Releases](https://github.com/Mizzzord/Renamorph/releases) скачайте `Renamorph-0.4.1-macOS-arm64.zip` и при желании проверьте его SHA-256 по `SHA256SUMS`.
 2. Распакуйте архив, перенесите `Renamorph.app` в «Программы» и откройте.
 3. Добавьте папку. Начните с копии файла и режима подтверждения.
 4. Измените расширение, проверьте параметры задания и разрешите конвертацию. Оригинал доступен через историю и Undo.

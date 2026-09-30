@@ -7,3 +7,5 @@ The initial functional brief referred to Consul. Renamorph does not contain Cons
 Swift, AppKit/SwiftUI, FSEvents, ImageIO, the worker protocol and journaled APFS publication are implementation choices made for this project. Source requirements and unverified reconstruction hypotheses are not treated as equivalent evidence.
 
 The project was previously called ConsulMAC during development. Renamorph keeps existing state and original backups in the legacy `~/Library/Application Support/ConsulMAC` directory when that profile exists and no Renamorph profile exists. New installations use `~/Library/Application Support/Renamorph`. No originals are moved or deleted during this transition; an exclusive profile lock prevents concurrent coordinators.
+
+The bundle identifier remains `local.consulmac.app` in 0.4.1 to preserve the identity of this application across its brand change. The name, executable and modules are Renamorph. This does not grant new folder permissions or change system security settings. Fresh installations still require the user to select accessible folders.

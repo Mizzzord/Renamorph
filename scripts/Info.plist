@@ -2,12 +2,12 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0"><dict>
 <key>CFBundleExecutable</key><string>Renamorph</string>
-<key>CFBundleIdentifier</key><string>io.github.mizzzord.renamorph</string>
+<key>CFBundleIdentifier</key><string>local.consulmac.app</string>
 <key>CFBundleName</key><string>Renamorph</string>
 <key>CFBundleDisplayName</key><string>Renamorph</string>
 <key>CFBundlePackageType</key><string>APPL</string>
-<key>CFBundleShortVersionString</key><string>0.4.0</string>
-<key>CFBundleVersion</key><string>4</string>
+<key>CFBundleShortVersionString</key><string>0.4.1</string>
+<key>CFBundleVersion</key><string>5</string>
 <key>CFBundleIconFile</key><string>AppIcon.icns</string>
 <key>LSApplicationCategoryType</key><string>public.app-category.utilities</string>
 <key>LSMinimumSystemVersion</key><string>14.0</string>

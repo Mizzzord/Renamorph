@@ -59,7 +59,7 @@ Routes have codec, stream and property restrictions. Images are currently static
 
 **Current binary: macOS 27.0+, Apple Silicon, local APFS.** This is the tested configuration. Intel and earlier macOS versions are not claimed.
 
-1. Download `Renamorph-0.4.0-macOS-arm64.zip` from [Releases](https://github.com/Mizzzord/Renamorph/releases). `SHA256SUMS` accompanies the assets.
+1. Download `Renamorph-0.4.1-macOS-arm64.zip` from [Releases](https://github.com/Mizzzord/Renamorph/releases). `SHA256SUMS` accompanies the assets.
 2. Extract it, move `Renamorph.app` to Applications and open it.
 3. Add a folder and start with a disposable copy in confirmation mode.
 4. Rename its extension, review the job settings and approve. Use History / Undo to restore the original.

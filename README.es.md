@@ -59,7 +59,7 @@ Las rutas tienen restricciones de códecs, pistas y propiedades. Las imágenes s
 
 **Binario actual: macOS 27.0+, Apple Silicon, APFS local.** Esta es la configuración comprobada. No se declara compatibilidad con Intel ni con versiones anteriores de macOS.
 
-1. Descarga `Renamorph-0.4.0-macOS-arm64.zip` desde [Releases](https://github.com/Mizzzord/Renamorph/releases). Los archivos incluyen `SHA256SUMS`.
+1. Descarga `Renamorph-0.4.1-macOS-arm64.zip` desde [Releases](https://github.com/Mizzzord/Renamorph/releases). Los archivos incluyen `SHA256SUMS`.
 2. Descomprime, mueve `Renamorph.app` a Aplicaciones y ábrela.
 3. Añade una carpeta y empieza con una copia de prueba en modo de confirmación.
 4. Cambia la extensión, revisa los parámetros y aprueba. Historial / Deshacer permite recuperar el original.
