@@ -1,0 +1,58 @@
+{
+  "jobStates": [
+    {
+      "name": "Пример.vtt",
+      "state": "succeeded"
+    },
+    {
+      "name": "Ошибка.vtt",
+      "state": "unsupported"
+    },
+    {
+      "name": "Изображение.jpg",
+      "state": "restored"
+    }
+  ],
+  "formatChecks": {
+    "jpegSignature": true,
+    "webvttHeader": true
+  },
+  "originalSHA256": "45a917430cf126d428c68b6c52dd329675424d285ddd8a2b5adbe82c65e6b165",
+  "backupSHA256": "45a917430cf126d428c68b6c52dd329675424d285ddd8a2b5adbe82c65e6b165",
+  "restoredSHA256": "45a917430cf126d428c68b6c52dd329675424d285ddd8a2b5adbe82c65e6b165",
+  "exportSHA256": "45a917430cf126d428c68b6c52dd329675424d285ddd8a2b5adbe82c65e6b165",
+  "allOriginalBytesMatch": true,
+  "savedRule": {
+    "source": "heic",
+    "target": "jpeg",
+    "quality": 0.85,
+    "action": "ask"
+  },
+  "duplicateRuleBlocked": true,
+  "backupLimitGB": 3,
+  "paused": false,
+  "windowSizes": [
+    {
+      "points": [
+        1180,
+        818
+      ],
+      "pixels": [
+        2360,
+        1636
+      ],
+      "image": "overview.jpg"
+    },
+    {
+      "points": [
+        920,
+        640
+      ],
+      "pixels": [
+        1840,
+        1280
+      ],
+      "image": "overview-compact.jpg"
+    }
+  ]
+}

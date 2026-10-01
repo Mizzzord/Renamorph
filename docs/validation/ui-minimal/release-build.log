@@ -1,0 +1,42 @@
+Building for production...
+[Planning deferred tasks]
+[2 / 10]
+[3 / 11] RenamorphCore
+[5 / 37]
+[11 / 37]
+[12 / 37]
+[17 / 37]
+[18 / 37]
+[20 / 37]
+[22 / 37]
+[27 / 37]
+[28 / 37]
+[30 / 37] RenamorphCore
+$PROJECT/Package.swift: RenamorphCore: ld: warning: search path '/Library/Developer/CommandLineTools/Developer/Library/Frameworks' not found
+[38 / 43] RenamorphWorker-product
+[49 / 65]
+[53 / 65]
+$PROJECT/Package.swift: RenamorphRecoveryProbe-product: ld: warning: search path '/Library/Developer/CommandLineTools/Developer/usr/lib' not found
+$PROJECT/Package.swift: RenamorphRecoveryProbe-product: ld: warning: search path '/Library/Developer/CommandLineTools/Developer/Library/Frameworks' not found
+[55 / 65] RenamorphRecoveryProbe-product
+[55 / 65]
+[57 / 65]
+[58 / 65]
+[59 / 65] RenamorphWorker-product
+$PROJECT/Package.swift: RenamorphWorker-product: ld: warning: search path '/Library/Developer/CommandLineTools/Developer/usr/lib' not found
+$PROJECT/Package.swift: RenamorphWorker-product: ld: warning: search path '/Library/Developer/CommandLineTools/Developer/Library/Frameworks' not found
+[61 / 65] RenamorphWorker-product
+[61 / 65]
+[62 / 65]
+[63 / 65]
+[64 / 65] Renamorph-product
+$PROJECT/Package.swift: Renamorph-product: ld: warning: search path '/Library/Developer/CommandLineTools/Developer/usr/lib' not found
+$PROJECT/Package.swift: Renamorph-product: ld: warning: search path '/Library/Developer/CommandLineTools/Developer/Library/Frameworks' not found
+[67 / 69] Renamorph-product
+[68 / 69] Renamorph-product
+[73 / 73] RenamorphRecoveryProbe-product
+Build complete! (28.09 sec)
+Bundled 21 Mach-O files; macOS 27.0+; ffmpeg version 9.0.2 Copyright (c) 2000-2026 the FFmpeg developers
+$PROJECT/dist/.renamorph-build.ed8sCz/Renamorph.app/Contents/Helpers/RenamorphWorker: replacing existing signature
+$PROJECT/dist/.renamorph-build.ed8sCz/Renamorph.app: replacing existing signature
+Готово: $PROJECT/dist/Renamorph.app

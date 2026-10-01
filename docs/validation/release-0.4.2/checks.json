@@ -1,0 +1,47 @@
+{
+  "version": "0.4.2",
+  "build": "6",
+  "minimumMacOS": "27.0",
+  "changedBundleFiles": [
+    "Contents/Info.plist",
+    "Contents/MacOS/Renamorph"
+  ],
+  "mainExecutablePayloadMatchesPreviousTestedBuild": true,
+  "allOtherExecutableAndResourceHashesMatch": true,
+  "previousUIValidation": "docs/UI-MINIMAL-VALIDATION.md",
+  "previousTests": 47,
+  "nativeLaunchAndVersionVerified": true,
+  "architecture": "arm64",
+  "fileCount": 65,
+  "zipAndMountedDmgMatchApp": true,
+  "zipAndDmgSignaturesVerified": true,
+  "sourceArchivesVerified": 10,
+  "sourceHashesMatchPreviousRelease": true,
+  "packagedSourceRecipeMatchesRepository": true,
+  "packagingPipelineCompleted": true,
+  "buildSeconds": 18.76,
+  "signature": "ad-hoc",
+  "notarized": false,
+  "assets": [
+    {
+      "name": "Renamorph-0.4.2-macOS-arm64.zip",
+      "size": 15450420,
+      "sha256": "51274361e9e04eab6a48d485aa25af196739d72091f2b58f5fd49c1ca78d66c9"
+    },
+    {
+      "name": "Renamorph-0.4.2-macOS-arm64.dmg",
+      "size": 17290103,
+      "sha256": "e96a8e9d74c36d160dbcc8ee129509772e397b8e46dd19176e503bb1379badc7"
+    },
+    {
+      "name": "Renamorph-0.4.2-third-party-sources.tar.gz",
+      "size": 39264922,
+      "sha256": "039341b801758afab695b2125f0d520844821ea0b6e741690f14faf58382ccd2"
+    },
+    {
+      "name": "SHA256SUMS",
+      "size": 305,
+      "sha256": "5571e9044849b28ec85d068e8c57061c56f61038d2ace5f0a1e0a90d23feb832"
+    }
+  ]
+}

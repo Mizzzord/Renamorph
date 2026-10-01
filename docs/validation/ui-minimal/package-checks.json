@@ -1,0 +1,13 @@
+{
+  "archive": "Renamorph-Minimal-UI-macOS-arm64.zip",
+  "bytes": 15450420,
+  "sha256": "2096d6bfa0f8bce18fb3b6c47745d902ccc58070a2b2c1cc4b6dacb312012597",
+  "identicalFiles": 65,
+  "originalAndExtractedMatch": true,
+  "signature": "ad-hoc",
+  "codesignDeepStrictVerified": true,
+  "unzipIntegrityVerified": true,
+  "architecture": "arm64",
+  "version": "0.4.1",
+  "minimumMacOS": "27.0"
+}

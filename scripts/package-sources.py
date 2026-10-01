@@ -68,8 +68,10 @@ for formula, url, revision in git_sources:
     if not (checkout / '.git').exists():
         checkout.mkdir(parents=True, exist_ok=True)
         subprocess.run(['git', 'init', str(checkout)], check=True, stdout=subprocess.DEVNULL)
-    subprocess.run(['git', '-C', str(checkout), 'fetch', '--depth=1', url, revision], check=True)
-    actual = subprocess.check_output(['git', '-C', str(checkout), 'rev-parse', 'FETCH_HEAD'], text=True).strip()
+    cached = subprocess.run(['git', '-C', str(checkout), 'cat-file', '-e', revision + '^{commit}'], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+    if cached.returncode != 0:
+        subprocess.run(['git', '-C', str(checkout), 'fetch', '--depth=1', url, revision], check=True, timeout=120)
+    actual = subprocess.check_output(['git', '-C', str(checkout), 'rev-parse', revision + '^{commit}'], text=True).strip()
     if actual != revision:
         raise RuntimeError('Source git revision mismatch: ' + formula['name'])
     destination = archives / (formula['name'] + '-' + revision + '.tar.gz')

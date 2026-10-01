@@ -1,0 +1,18 @@
+Building for production...
+[2 / 10]
+[3 / 11] RenamorphCore
+[5 / 37]
+[11 / 37]
+[12 / 37]
+[17 / 37]
+[18 / 37]
+[20 / 37]
+[22 / 37]
+[27 / 37]
+[28 / 37]
+[30 / 37] RenamorphCore
+Build complete! (18.76 sec)
+Bundled 21 Mach-O files; macOS 27.0+; ffmpeg version 9.0.2 Copyright (c) 2000-2026 the FFmpeg developers
+$PROJECT/dist/.renamorph-build.pBh0k1/Renamorph.app/Contents/Helpers/RenamorphWorker: replacing existing signature
+$PROJECT/dist/.renamorph-build.pBh0k1/Renamorph.app: replacing existing signature
+Готово: $PROJECT/dist/Renamorph.app

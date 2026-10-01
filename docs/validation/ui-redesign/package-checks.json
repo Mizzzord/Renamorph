@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-01",
+  "app": "dist/Renamorph.app",
+  "archive": "dist/Renamorph-UI-Redesign-macOS-arm64.zip",
+  "archiveSHA256": "4cd0219d6f3a6588a0162a5fb1ace9cd86c5260bcb8afd16bf727f39f20e3ef9",
+  "archiveBytes": 15517330,
+  "bundleVersion": "0.4.1",
+  "minimumMacOS": "27.0",
+  "architecture": "arm64",
+  "fileCount": 65,
+  "bundleFilesIdenticalAfterExtraction": true,
+  "originalSignatureVerified": true,
+  "extractedSignatureVerified": true,
+  "signatureType": "ad-hoc",
+  "notarized": false,
+  "mainExecutableSHA256": "74d1198d8aaf7333771c58c64b3c2c70050c56c7c96d7d12b19e95d5532e9e7f",
+  "workerSHA256": "5458d4d331356fbb9150a7cdcc1897616acbf276eb228f2e053ee26291287944"
+}

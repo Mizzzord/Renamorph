@@ -1,0 +1,121 @@
+Building for debugging...
+[2 / 14]
+[3 / 15] RenamorphCore
+Build complete! (0.78 sec)
+Building for debugging...
+[Planning deferred tasks]
+[2 / 16] RenamorphCore
+[11 / 25] RenamorphCore
+[16 / 31] RenamorphCore
+[16 / 31] RenamorphWorker-product
+[23 / 37] RenamorphRecoveryProbe-product
+[25 / 34] RenamorphCoreTests-product
+[33 / 37] RenamorphWorker-product
+$PROJECT/Package.swift: RenamorphRecoveryProbe-product: ld: warning: search path '/Library/Developer/CommandLineTools/Developer/usr/lib' not found
+$PROJECT/Package.swift: RenamorphRecoveryProbe-product: ld: warning: search path '/Library/Developer/CommandLineTools/Developer/Library/Frameworks' not found
+[37 / 39] Renamorph-product
+$PROJECT/Package.swift: RenamorphWorker-product: ld: warning: search path '/Library/Developer/CommandLineTools/Developer/usr/lib' not found
+$PROJECT/Package.swift: RenamorphWorker-product: ld: warning: search path '/Library/Developer/CommandLineTools/Developer/Library/Frameworks' not found
+$PROJECT/Package.swift: Renamorph-product: ld: warning: search path '/Library/Developer/CommandLineTools/Developer/usr/lib' not found
+$PROJECT/Package.swift: Renamorph-product: ld: warning: search path '/Library/Developer/CommandLineTools/Developer/Library/Frameworks' not found
+Build complete! (1.67 sec)
+◇ Test run started.
+↳ Testing Library Version: 2084
+↳ Target Platform: arm64e-apple-macos14.0
+◇ Test renamedApplicationKeepsLegacyOriginalsAndState() started.
+◇ Suite CoreTests started.
+◇ Test testEveryDeclaredRouteThroughRealWorker() started.
+✔ Test renamedApplicationKeepsLegacyOriginalsAndState() passed after 0.002 seconds.
+✔ Test testEveryDeclaredRouteThroughRealWorker() passed after 4.366 seconds.
+◇ Test testNewRasterTargetsPreserveTransparencyAndUndo() started.
+✔ Test testNewRasterTargetsPreserveTransparencyAndUndo() passed after 0.480 seconds.
+◇ Test testRenameHEICToJPEGAndExactUndo() started.
+✔ Test testRenameHEICToJPEGAndExactUndo() passed after 0.247 seconds.
+◇ Test testUnknownAndRepeatedGroupExtensions() started.
+✔ Test testUnknownAndRepeatedGroupExtensions() passed after 0.001 seconds.
+◇ Test testAliasesAndBasenameDoNotBecomeCandidates() started.
+✔ Test testAliasesAndBasenameDoNotBecomeCandidates() passed after 0.001 seconds.
+◇ Test testRulesResolvePriorityAndRejectConflict() started.
+✔ Test testRulesResolvePriorityAndRejectConflict() passed after 0.001 seconds.
+◇ Test testVersionChangeBeforePreparationPreservesNewBytes() started.
+✔ Test testVersionChangeBeforePreparationPreservesNewBytes() passed after 0.019 seconds.
+◇ Test testVersionChangeAfterPreparationBlocksPublication() started.
+✔ Test testVersionChangeAfterPreparationBlocksPublication() passed after 0.098 seconds.
+◇ Test testReplacedSourceSameBytesStillRejected() started.
+✔ Test testReplacedSourceSameBytesStillRejected() passed after 0.019 seconds.
+◇ Test testMultiOutputUsesOriginalForEveryBranch() started.
+✔ Test testMultiOutputUsesOriginalForEveryBranch() passed after 0.312 seconds.
+◇ Test testUnagreedGroupStopsBeforePublishing() started.
+✔ Test testUnagreedGroupStopsBeforePublishing() passed after 0.173 seconds.
+◇ Test testCancelledBranchIsNeverPublished() started.
+✔ Test testCancelledBranchIsNeverPublished() passed after 0.134 seconds.
+◇ Test testConflictPreservesForeignFileAndSource() started.
+✔ Test testConflictPreservesForeignFileAndSource() passed after 0.162 seconds.
+◇ Test testBackupQuotaStopsBeforeSourceMutation() started.
+✔ Test testBackupQuotaStopsBeforeSourceMutation() passed after 0.026 seconds.
+◇ Test testCancelledPreparationPreservesSource() started.
+✔ Test testCancelledPreparationPreservesSource() passed after 0.019 seconds.
+◇ Test testUndoConflictPreservesManualEdit() started.
+✔ Test testUndoConflictPreservesManualEdit() passed after 0.126 seconds.
+◇ Test testUndoNameConflictAndMissingBackup() started.
+✔ Test testUndoNameConflictAndMissingBackup() passed after 0.129 seconds.
+◇ Test testInterruptedPublicationLeavesDurableRecoveryEvidence() started.
+✔ Test testInterruptedPublicationLeavesDurableRecoveryEvidence() passed after 0.151 seconds.
+◇ Test testGroupInterruptionKeepsSourceAndPartialResult() started.
+✔ Test testGroupInterruptionKeepsSourceAndPartialResult() passed after 0.166 seconds.
+◇ Test testSymlinkAndHardLinkRejected() started.
+✔ Test testSymlinkAndHardLinkRejected() passed after 0.002 seconds.
+◇ Test testCorruptAndMultiFrameInputRejected() started.
+✔ Test testCorruptAndMultiFrameInputRejected() passed after 0.023 seconds.
+◇ Test testAlphaNeedsExplicitPolicyAndPixelsAreLimited() started.
+✔ Test testAlphaNeedsExplicitPolicyAndPixelsAreLimited() passed after 0.018 seconds.
+◇ Test testOrientationIsAppliedAndMetadataRemoved() started.
+✔ Test testOrientationIsAppliedAndMetadataRemoved() passed after 0.025 seconds.
+◇ Test testJournalRoundTripAndSecondInstanceLock() started.
+✔ Test testJournalRoundTripAndSecondInstanceLock() passed after 0.015 seconds.
+◇ Test testWorkerMissingAndCrashesReturnErrors() started.
+✔ Test testWorkerMissingAndCrashesReturnErrors() passed after 0.003 seconds.
+◇ Test testLiveWatcherDetectsRenameAndExcludesFolder() started.
+✔ Test testLiveWatcherDetectsRenameAndExcludesFolder() passed after 1.527 seconds.
+◇ Test testSIGKILLDuringPublicationBecomesRecoveryOnRestart() started.
+✔ Test testSIGKILLDuringPublicationBecomesRecoveryOnRestart() passed after 0.570 seconds.
+◇ Test testWorkerCancellationKillsProcessGroup() started.
+✔ Test testWorkerCancellationKillsProcessGroup() passed after 0.058 seconds.
+◇ Test testWorkerTimeoutStopsHungEngine() started.
+✔ Test testWorkerTimeoutStopsHungEngine() passed after 0.223 seconds.
+◇ Test testWritePermissionFailurePreservesSource() started.
+✔ Test testWritePermissionFailurePreservesSource() passed after 0.029 seconds.
+◇ Test testWatcherRapidRenameAndRescanDoNotMultiplyRequests() started.
+✔ Test testWatcherRapidRenameAndRescanDoNotMultiplyRequests() passed after 2.528 seconds.
+◇ Test testCoordinatorAutomaticRuleCompletesRealRename() started.
+✔ Test testCoordinatorAutomaticRuleCompletesRealRename() passed after 1.824 seconds.
+◇ Test testCancellationReleasesOnlyUnpublishedWorkingResults() started.
+✔ Test testCancellationReleasesOnlyUnpublishedWorkingResults() passed after 0.148 seconds.
+◇ Test testOriginalCanBeExportedAfterItsFolderMoved() started.
+✔ Test testOriginalCanBeExportedAfterItsFolderMoved() passed after 0.146 seconds.
+◇ Test testUntrustedWorkerDimensionsAreRejectedBeforeArithmetic() started.
+✔ Test testUntrustedWorkerDimensionsAreRejectedBeforeArithmetic() passed after 0.007 seconds.
+◇ Test testCompatibleCopyAfterEngineUpgradeKeepsSemanticValidation() started.
+✔ Test testCompatibleCopyAfterEngineUpgradeKeepsSemanticValidation() passed after 0.082 seconds.
+◇ Test testCAFAndWavPackPreservePCMAndExactUndo() started.
+✔ Test testCAFAndWavPackPreservePCMAndExactUndo() passed after 0.633 seconds.
+◇ Test testFullDecodeRejectsDamagedFLACAndPreservesBytes() started.
+✔ Test testFullDecodeRejectsDamagedFLACAndPreservesBytes() passed after 0.066 seconds.
+◇ Test testAllAudioVideoRoutesWithContentDetectionAndValidation() started.
+✔ Test testAllAudioVideoRoutesWithContentDetectionAndValidation() passed after 18.330 seconds.
+◇ Test testMediaTransactionGroupAndExactUndo() started.
+✔ Test testMediaTransactionGroupAndExactUndo() passed after 0.501 seconds.
+◇ Test testRemuxPlanAndOnlyRemuxRejectsIncompatibleCodecs() started.
+✔ Test testRemuxPlanAndOnlyRemuxRejectsIncompatibleCodecs() passed after 0.161 seconds.
+◇ Test testSubtitlesRoundTripAndUnsupportedStyling() started.
+✔ Test testSubtitlesRoundTripAndUnsupportedStyling() passed after 0.040 seconds.
+◇ Test testOldOptionsAndMediaAliases() started.
+✔ Test testOldOptionsAndMediaAliases() passed after 0.001 seconds.
+◇ Test testMediaOutputLimitAndCancellationPreserveInput() started.
+✔ Test testMediaOutputLimitAndCancellationPreserveInput() passed after 0.368 seconds.
+◇ Test testMediaAdditionalTracksAndExternalPlaylistsRejected() started.
+✔ Test testMediaAdditionalTracksAndExternalPlaylistsRejected() passed after 0.051 seconds.
+◇ Test testMediaFrameGeometryAndCountMismatchRejected() started.
+✔ Test testMediaFrameGeometryAndCountMismatchRejected() passed after 0.063 seconds.
+✔ Suite CoreTests passed after 34.096 seconds.
+✔ Test run with 47 tests in 1 suite passed after 34.096 seconds.

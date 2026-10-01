@@ -1,0 +1,17 @@
+Building for debugging...
+[Planning deferred tasks]
+[2 / 23]
+[3 / 24] RenamorphCore
+[12 / 33] RenamorphCore
+[17 / 27] RenamorphCore
+[20 / 29] Renamorph-product
+$PROJECT/Package.swift: RenamorphWorker-product: ld: warning: search path '/Library/Developer/CommandLineTools/Developer/usr/lib' not found
+$PROJECT/Package.swift: RenamorphWorker-product: ld: warning: search path '/Library/Developer/CommandLineTools/Developer/Library/Frameworks' not found
+[33 / 36] RenamorphRecoveryProbe-product
+[36 / 38] Renamorph-product
+$PROJECT/Package.swift: RenamorphRecoveryProbe-product: ld: warning: search path '/Library/Developer/CommandLineTools/Developer/usr/lib' not found
+$PROJECT/Package.swift: RenamorphRecoveryProbe-product: ld: warning: search path '/Library/Developer/CommandLineTools/Developer/Library/Frameworks' not found
+$PROJECT/Package.swift: Renamorph-product: ld: warning: search path '/Library/Developer/CommandLineTools/Developer/usr/lib' not found
+$PROJECT/Package.swift: Renamorph-product: ld: warning: search path '/Library/Developer/CommandLineTools/Developer/Library/Frameworks' not found
+[38 / 40] Renamorph-product
+Build complete! (4.14 sec)

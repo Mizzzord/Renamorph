@@ -1,0 +1,48 @@
+{
+  "date": "2026-10-01",
+  "profile": "test-artifacts/ui-redesign/profile",
+  "fixturesOnly": true,
+  "jobs": {
+    "Captions.vtt": {
+      "state": "succeeded",
+      "outputs": [
+        "published"
+      ]
+    },
+    "Broken.vtt": {
+      "state": "unsupported",
+      "outputs": []
+    },
+    "Sample.jpg": {
+      "state": "restored",
+      "outputs": [
+        "restored"
+      ]
+    },
+    "Group.jpg,webp": {
+      "state": "succeeded",
+      "outputs": [
+        "published",
+        "cancelled"
+      ]
+    },
+    "Decline.vtt": {
+      "state": "cancelled",
+      "outputs": [
+        "waiting"
+      ]
+    }
+  },
+  "restoredOriginalSHA256": "83bfd19d05cbf33fa6a93b384db464d843c253ccd3d16542dfefcaa676826e1c",
+  "exportedOriginalSHA256": "83bfd19d05cbf33fa6a93b384db464d843c253ccd3d16542dfefcaa676826e1c",
+  "backupSHA256": "83bfd19d05cbf33fa6a93b384db464d843c253ccd3d16542dfefcaa676826e1c",
+  "publishedJPEGHasJPEGSignature": true,
+  "cancelledWEBPNotPublished": true,
+  "subtitlesHaveWEBVTTHeader": true,
+  "declinedInputUnchanged": true,
+  "excludedJobs": 0,
+  "savedRuleQuality": 0.85,
+  "savedBackupLimitGiB": 3,
+  "savedAudioSampleRateHz": 48000,
+  "paused": false
+}

@@ -1,0 +1,25 @@
+Building for production...
+[2 / 3] Renamorph-product
+[3 / 48]
+[9 / 48]
+[11 / 48]
+[17 / 48]
+[18 / 48]
+[21 / 48]
+[23 / 48]
+[34 / 48]
+[35 / 48]
+[39 / 48]
+[44 / 48]
+[45 / 48]
+[46 / 48]
+[47 / 48] Renamorph-product
+$PROJECT/Package.swift: Renamorph-product: ld: warning: search path '/Library/Developer/CommandLineTools/Developer/usr/lib' not found
+$PROJECT/Package.swift: Renamorph-product: ld: warning: search path '/Library/Developer/CommandLineTools/Developer/Library/Frameworks' not found
+[50 / 52] Renamorph-product
+[51 / 52] Renamorph-product
+Build complete! (22.87 sec)
+Bundled 21 Mach-O files; macOS 27.0+; ffmpeg version 9.0.2 Copyright (c) 2000-2026 the FFmpeg developers
+$PROJECT/dist/.renamorph-build.15I56B/Renamorph.app/Contents/Helpers/RenamorphWorker: replacing existing signature
+$PROJECT/dist/.renamorph-build.15I56B/Renamorph.app: replacing existing signature
+Готово: $PROJECT/dist/Renamorph.app

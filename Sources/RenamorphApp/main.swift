@@ -6,6 +6,12 @@ final class AppModel: ObservableObject {
     @Published var state = PersistentState()
     @Published var diagnostic = "Запуск наблюдателя…"
     let coordinator: Coordinator
+    let toolchain = MediaToolchain()
+    var availableRouteCount: Int { Route.all.filter { $0.unavailableReason == nil }.count }
+    var diagnosticIssue: String? {
+        let statusPrefixes = ["Запуск наблюдателя", "Наблюдение приостановлено", "Выберите папку для наблюдения", "Корень перемещён", "Наблюдение активно"]
+        return statusPrefixes.contains(where: { diagnostic.hasPrefix($0) }) ? nil : diagnostic
+    }
     var onUpdate: (() -> Void)?
     init(coordinator: Coordinator) {
         self.coordinator = coordinator
@@ -18,13 +24,17 @@ final class AppModel: ObservableObject {
     func chooseFolder(exclusion: Bool = false) {
         let panel = NSOpenPanel()
         panel.canChooseDirectories = true; panel.canChooseFiles = false; panel.allowsMultipleSelection = false
+        panel.title = exclusion ? "Исключить папку" : "Добавить папку"
         panel.prompt = exclusion ? "Исключить" : "Наблюдать"
-        if panel.runModal() == .OK, let url = panel.url {
-            modify { settings in
+        let apply: (NSApplication.ModalResponse) -> Void = { [weak self] response in
+            guard response == .OK, let url = panel.url else { return }
+            self?.modify { settings in
                 if exclusion { if !settings.exclusions.contains(url.path) { settings.exclusions.append(url.path) } }
                 else if !settings.folders.contains(where: { $0.path == url.path }) { settings.folders.append(WatchFolder(url: url)) }
             }
         }
+        if let window = NSApplication.shared.keyWindow { panel.beginSheetModal(for: window, completionHandler: apply) }
+        else { apply(panel.runModal()) }
     }
 }
 
@@ -47,6 +57,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
         applicationItem.submenu = applicationMenu; mainMenu.addItem(applicationItem)
         let editItem = NSMenuItem(title: "Правка", action: nil, keyEquivalent: "")
         let edit = NSMenu(title: "Правка")
+        edit.addItem(withTitle: "Вырезать", action: #selector(NSText.cut(_:)), keyEquivalent: "x")
         edit.addItem(withTitle: "Копировать", action: #selector(NSText.copy(_:)), keyEquivalent: "c")
         edit.addItem(withTitle: "Вставить", action: #selector(NSText.paste(_:)), keyEquivalent: "v")
         edit.addItem(withTitle: "Выбрать всё", action: #selector(NSText.selectAll(_:)), keyEquivalent: "a")
@@ -63,9 +74,19 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
             let coordinator = try Coordinator(directory: directory, workerURL: worker)
             let model = AppModel(coordinator: coordinator); self.model = model
             window = NSWindow(contentRect: NSRect(x: 0, y: 0, width: 1180, height: 790), styleMask: [.titled, .closable, .miniaturizable, .resizable], backing: .buffered, defer: false)
-            window.title = "Renamorph"; window.minSize = NSSize(width: 920, height: 640)
+            window.title = "Renamorph"
+            window.appearance = NSAppearance(named: .darkAqua)
+            window.titlebarAppearsTransparent = true
+            window.titleVisibility = .hidden
+            window.backgroundColor = NSColor(srgbRed: 59 / 255, green: 59 / 255, blue: 59 / 255, alpha: 1)
             window.isReleasedWhenClosed = false
-            window.contentView = NSHostingView(rootView: MainView(model: model))
+            let hostingView = NSHostingView(rootView: MainView(model: model))
+            hostingView.sizingOptions = []
+            window.contentView = hostingView
+            window.minSize = NSSize(width: 920, height: 640)
+            if args.contains("--compact") {
+                window.setFrame(NSRect(origin: window.frame.origin, size: NSSize(width: 920, height: 640)), display: false)
+            }
             window.center()
             statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
             statusItem.button?.image = NSImage(systemSymbolName: "arrow.triangle.2.circlepath", accessibilityDescription: "Renamorph")
